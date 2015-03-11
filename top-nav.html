@@ -12,21 +12,23 @@ Element providing solution to no problem in particular.
 @status alpha
 @homepage http://.github.io/top-nav
 -->
-<polymer-element name="top-nav">
+<polymer-element name="top-nav" attributes="contentWidth">
   <template>
     <link rel="stylesheet" href="top-nav.css">
-    <content select="a"></content>
+    <div id="nav-wrapper" style="width: {{contentWidth}}px">
+      <content select="nav-item"></content>
+    </div>
   </template>
   <script>
     Polymer({
       /**
-       * The `author` attribute sets an initial author
+       * The `content-width` attribute sets an initial width of navigation
        *
-       * @attribute author
-       * @type string
-       * @default 'Dimitri Glazkov'
+       * @attribute content-width
+       * @type int
+       * @default '940'
        */
-      author: 'Dimitri Glazkov',
+      contentWidth: 940,
 
       /**
        * `fancy` is a property that does something fancy.

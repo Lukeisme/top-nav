@@ -1,4 +1,13 @@
 :host {
-  display: block;
-  color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  background-color: #e67e22;
+}
+
+#nav-wrapper {
+  margin: 0 auto;
 }
