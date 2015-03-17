@@ -5,9 +5,10 @@
   height: 50px;
   line-height: 50px;
   width: 100%;
-  background-color: #e67e22;
+  background-color: #e74c3c;
 }
 
 #nav-wrapper {
   margin: 0 auto;
+  font-weight: bold;
 }
